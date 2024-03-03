@@ -1,0 +1,28 @@
+.relatedproduct {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.relatedproduct h1 {
+  margin-top: 30px;
+  font-size: 50px;
+  font-weight: 600;
+}
+.relatedproduct hr {
+  width: 400px;
+}
+.relatedproduct-item {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+@media (max-width: 901px) {
+  .relatedproduct-item {
+    display: grid;
+  }
+  .relatedproduct h1 {
+    font-size: 40px;
+  }
+}
