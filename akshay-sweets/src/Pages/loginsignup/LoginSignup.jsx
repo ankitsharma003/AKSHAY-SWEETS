@@ -14,7 +14,7 @@ const changeHandler = (e)=>{
   const login = async () => {
     console.log("login success " ,formdata);
     let responcedata 
-    await fetch("http://localhost:5100/login", {
+    await fetch("https://akshay-sweets-backend-1.onrender.com/login", {
       method: "POST",
       headers: {
         Accept: "application/json",
@@ -33,7 +33,7 @@ const changeHandler = (e)=>{
   const signup = async () => {
     console.log("sing up success ",formdata);
     let responcedata 
-    await fetch("http://localhost:5100/signup", {
+    await fetch("https://akshay-sweets-backend-1.onrender.com/signup", {
       method: "POST",
       headers: {
         Accept: "application/json",
