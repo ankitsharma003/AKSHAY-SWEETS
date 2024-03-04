@@ -1,0 +1,16 @@
+{
+  "name": "akshay-sweets",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install-server": "cd backend && npm install",
+    "start-server": "cd backend && node index.js",
+    "install-client": "cd akshay-sweets && npm install",
+    "build-client": "cd akshay-sweets && npm run build",
+    "start-client": "cd akshay-sweets && npm start"
+  },
+  "author": "",
+  "license": "ISC"
+}
