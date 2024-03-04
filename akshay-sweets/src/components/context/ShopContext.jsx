@@ -12,11 +12,11 @@ const ShopContextProvider = (props) => {
   const [All_products, setAll_products] = useState([]);
   const [cartItem, setcartItem] = useState(GetDefautCart());
   useEffect(() => {
-    fetch("http://localhost:5100/allproduct")
+    fetch("https://akshay-sweets-backend-1.onrender.com/allproduct")
       .then((resp) => resp.json())
       .then((data) => setAll_products(data));
       if(localStorage.getItem("auth-token")){
-        fetch("http://localhost:5100/getcart",{
+        fetch("https://akshay-sweets-backend-1.onrender.com/getcart",{
           method: "POST",
           headers: {
             Accept: "application/form-data",
@@ -31,7 +31,7 @@ const ShopContextProvider = (props) => {
   const addToCart = (ItemId) => {
     setcartItem((prev) => ({ ...prev, [ItemId]: prev[ItemId] + 1 }));
     if(localStorage.getItem("auth-token")){
-      fetch("http://localhost:5100/addtocart",{
+      fetch("https://akshay-sweets-backend-1.onrender.com/addtocart",{
         method: "POST",
         headers: {
           Accept: "application/form-data",
@@ -45,7 +45,7 @@ const ShopContextProvider = (props) => {
   const removeFromCart = (ItemId) => {
     setcartItem((prev) => ({ ...prev, [ItemId]: prev[ItemId] - 1 }));
     if(localStorage.getItem("auth-token")){
-      fetch("http://localhost:5100/removecartproduct",{
+      fetch("https://akshay-sweets-backend-1.onrender.com/removecartproduct",{
         method: "POST",
         headers: {
           Accept: "application/form-data",
