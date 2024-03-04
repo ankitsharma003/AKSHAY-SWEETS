@@ -5,7 +5,7 @@ import remove_icon from "../../assets/close-btn.png";
 const Listproduct = () => {
   const [allproduct, setAllProduct] = useState([]);
   const fetchInfo = async () => {
-    await fetch("http://localhost:5100/allproduct")
+    await fetch("https://akshay-sweets-backend-1.onrender.com/allproduct")
       .then((resp) => resp.json())
       .then((data) => {
         setAllProduct(data);
@@ -16,7 +16,7 @@ const Listproduct = () => {
     fetchInfo();
   }, []);
   const remove_product = async (id) => {
-    await fetch("http://localhost:5100/removeproduct", {
+    await fetch("https://akshay-sweets-backend-1.onrender.com/removeproduct", {
       method: "POST",
       headers: {
         Accept: "application/json",

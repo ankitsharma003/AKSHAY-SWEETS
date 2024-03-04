@@ -41,7 +41,7 @@ const Addproduct = () => {
     formdata.append("img4", productDetails.img4);
     console.log([...formdata.entries()]);
     try {
-      const response = await fetch("http://localhost:5100/upload", {
+      const response = await fetch("https://akshay-sweets-backend-1.onrender.com/upload", {
         method: "POST",
         body: formdata,
       });
@@ -54,7 +54,7 @@ const Addproduct = () => {
           (productDetails.img3 = responsedata.image_urls[3]),
           (productDetails.img4 = responsedata.image_urls[4]),
           console.log(productDetails);
-        await fetch("http://localhost:5100/addproduct", {
+        await fetch("https://akshay-sweets-backend-1.onrender.com/addproduct", {
           method: "POST",
           headers: {
             Accept: "application/json",

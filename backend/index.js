@@ -58,7 +58,7 @@ app.post(
     for (const fieldName of ["image", "img1", "img2", "img3", "img4"]) {
       if (req.files[fieldName]) {
         imageUrls.push(
-          `http://localhost:${port}/images/${req.files[fieldName][0].filename}`
+          `https://akshay-sweets-backend-1.onrender.com/images/${req.files[fieldName][0].filename}`
         );
       }
     }
