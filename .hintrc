@@ -10,5 +10,8 @@
     "not edge <= 117",
     "not opera <= 102",
     "not samsung <= 22"
-  ]
+  ],
+  "hints": {
+    "apple-touch-icons": "off"
+  }
 }

@@ -49,25 +49,29 @@
 }
 .description{
     margin: 10px 3px; 
-    font-size: 18px;
     font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
 }
 .right-side .addtocart{
     padding: 20px 40px;
     width: 200px;
-    font-size: 15px;
+    font-size: 19px;
     font-weight: 600;
-    color: ivory;
-    background: #ff6200;
+    color: black;
+    background: transparent;
     margin-bottom:40px ;
-    border: none;
+    border: 1px solid black;
     border-radius: 5px;
     outline: none;
     cursor: pointer;
+    transition: 4ms ease-in-out;
 }
 .right-side .addtocart:hover{
-    filter: brightness(0.8);
-    scale: 1.03;
+    scale: 1.04;
+    background: #ff6200;
+    color: ivory;
+    border: none;
 }
 
 @media screen and (max-width: 768px) {

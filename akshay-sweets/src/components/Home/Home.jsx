@@ -1,6 +1,5 @@
 import React from 'react'
-import carouselimg from '../../assets/carousel_1.png'
-import carouselimg_2 from '../../assets/SWEET.jpg'
+import carouselimg from '../../assets/caroousel.png'
 
 export const Home = () => {
   return (
@@ -10,12 +9,12 @@ export const Home = () => {
           <div className="carousel-item active">
             <img src={carouselimg} className="d-block w-100" alt="..." />
           </div>
-          <div className="carousel-item">
+          {/* <div className="carousel-item">
             <img src={carouselimg_2} className="d-block w-100" alt="..." />
           </div>
           <div className="carousel-item">
             <img src={carouselimg} className="d-block w-100" alt="..." />
-          </div>
+          </div> */}
         </div>
         <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
           <span className="carousel-control-prev-icon" aria-hidden="true" />

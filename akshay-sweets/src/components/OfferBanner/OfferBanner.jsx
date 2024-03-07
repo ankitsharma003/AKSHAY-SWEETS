@@ -1,6 +1,6 @@
 import React from "react";
 import "./OfferBanner.css";
-import banner from "../../assets/carousel_1.png";
+import banner from "../../assets/offer-banner.png";
 import { Link } from "react-router-dom";
 export const OfferBanner = () => {
   return (

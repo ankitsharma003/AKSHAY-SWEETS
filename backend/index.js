@@ -117,7 +117,7 @@ const Product = mongoose.model("Product", {
   available: {
     type: Boolean,
     default: true,
-  },
+  },    
 });
 app.post("/addproduct", async (req, res) => {
   let products = await Product.find({});

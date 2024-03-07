@@ -23,7 +23,16 @@
 }
 @media (max-width: 901px) {
     .items{
-        display:flex;
-        flex-wrap:wrap;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-self: center;
+        gap: 40px;
+        width: 80vw;
     }
+}
+@media (max-width: 800px) {
+  .items{
+     display: flex;
+     flex-wrap: wrap;
+  }
 }
